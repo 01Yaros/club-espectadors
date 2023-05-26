@@ -1,8 +1,15 @@
 /* GENERAL */
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: #e8e8e8;
   color: #1c1c1c;
   margin: 0;
+  min-height: 100%;
+  /* flex */
 }
 /* FONT FAMILY */
 body {
@@ -23,7 +30,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* align-items: center */
 }
 /* HEADER */
 .my_header {
@@ -128,6 +134,7 @@ footer {
 }
 .footer-cont2 {
   /* SPACE */
+  margin-top: 55px;
   margin-left: auto;
 }
 /* FOOTER-NAV */
@@ -135,6 +142,7 @@ ul.footer-nav {
   list-style-type: none;
   padding-left: 4%;
   width: 450px;
+  margin-bottom: 35px;
 }
 ul.footer-nav li {
   display: inline;
@@ -143,6 +151,26 @@ ul.footer-nav li {
 ul.links {
   list-style-type: none;
   padding-left: 4%;
+  font-size: 13px;
+}
+.link {
+  display: flex;
+  justify-content: end;
+  font-size: 40px;
+  padding-right: 4%;
+}
+ul.social-nav {
+  list-style-type: none;
+  padding-right: 4%;
+  width: auto;
+  margin-bottom: 35px;
+  /* FLEX */
+  display: flex;
+  justify-content: end;
+  margin-left: auto;
+}
+ul.social-nav li {
+  display: inline;
 }
 ul.social-nav li + li:before,
 ul.footer-nav li + li:before {
@@ -150,14 +178,29 @@ ul.footer-nav li + li:before {
   padding: 10px;
 }
 /* LINKS */
-a:link {
+footer a:link {
   color: white;
 }
-a:visited {
+footer a:visited {
   color: aliceblue;
 }
-a:hover {
+footer a:hover {
   color: lightgrey;
+}
+footer a {
+  text-decoration: none;
+}
+header a:link {
+  color: black;
+}
+header a:visited {
+  color: black;
+}
+header a:hover {
+  color: black;
+}
+header a {
+  text-decoration: none;
 }
 /* BUTTONS */
 .btn1 {
@@ -206,6 +249,7 @@ button:hover {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 15px;
+  margin-bottom: 30px;
   /* FLEX */
   display: flex;
   justify-content: center;
